@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ZENNV CHAT</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<div class="login-container">
+
+<h1>ZENNV CHAT 😈🔥</h1>
+
+<input
+type="text"
+id="phone"
+placeholder="08xxxxxxxx"
+>
+
+<div id="recaptcha-container"></div>
+
+<button onclick="sendCode()">
+Kirim OTP
+</button>
+
+<input
+type="text"
+id="otp"
+placeholder="Kode OTP"
+>
+
+<button onclick="verifyCode()">
+Masuk
+</button>
+
+</div>
+
+<script type="module" src="firebase.js"></script>
+<script type="module" src="login.js"></script>
+
+</body>
+</html>
